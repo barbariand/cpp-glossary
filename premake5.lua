@@ -3,19 +3,26 @@
 require("ecc")
 
 -- Workspace settings
-workspace("Hi")
+workspace("C++ Glossary")
 configurations("Debug", "Release")
 
--- Project settings
-project("Hi")
+-- Outputs
+targetdir("bin/%{cfg.buildcfg}")
+
+-- Build tools
 toolset("clang")
 kind("ConsoleApp")
 language("C++")
 cppdialect("C++11")
 
--- Inputs and outputs
-targetdir("bin/%{cfg.buildcfg}")
-files({ "include/**.h", "include/**.hpp", "src/**.cpp" })
+-- Projects
+project("iostream")
+files({ "examples/iostream/**.cpp" })
+
+project("fstream")
+files({ "examples/fstream/**.cpp" })
+
+-- End projects
 
 -- Debug configuration
 filter("configurations:Debug")
