@@ -17,7 +17,6 @@ cppdialect("C++11")
 
 -- Projects
 require("projects")
--- End projects
 
 -- Debug configuration
 filter("configurations:Debug")
