@@ -1,6 +1,6 @@
 # <Name>:
 __Inkludering__:
-```cpp
+```c++
 #include <iostream>
 ```
 
@@ -16,7 +16,7 @@ __Operator__ `<<`:
 andra förklaringar för funktioner eller liknande
 
 __Exempel__:
-```cpp
+```c++
 /// Exempel
 ```
 
