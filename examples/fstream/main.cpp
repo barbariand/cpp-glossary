@@ -16,8 +16,7 @@ int main() {
     return 1;
   }
 
-  // !IMPORTANT!
-  // Make sure to close the file when you are done. Missing
+  // WARNING: Make sure to close the file when you are done. Missing
   // this step will have dire consequenses in the rest of your
   // program.
   input_file.close();
@@ -39,8 +38,7 @@ int main() {
     return 1;
   }
 
-  // !IMPORTANT!
-  // Make sure to close the file when you are done. Missing
+  // WARNING: Make sure to close the file when you are done. Missing
   // this step will have dire consequenses in the rest of your
   // program.
   output_file.close();
@@ -56,8 +54,7 @@ int main() {
   // the buffer that we defined above.
   std::getline(input_file, input);
 
-  // !IMPORTANT!
-  // Make sure to close the file when you are done. Missing
+  // WARNING: Make sure to close the file when you are done. Missing
   // this step will have dire consequenses in the rest of your
   // program.
   input_file.close();

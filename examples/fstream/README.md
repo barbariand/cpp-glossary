@@ -1,5 +1,5 @@
 # fstream
-This example project will have a brief overview of how to use the basic functions of the `<fstream>` library. The project will to the following.
+This example project will have a brief overview of how to use the basic functions of the `<fstream>` library. The project will do the following.
 
 1. Create a unique filename
 1. Check if the file exist
