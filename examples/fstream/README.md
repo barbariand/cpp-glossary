@@ -3,6 +3,8 @@ När vi ska läsa och skriva från och till filer vill vi använda detta bibliot
 ```cpp
 #include <fstream>
 ```
+__Reexports:__
+-  `std::string` from `<string>`
 
 I detta exempelprojekt kommer vi att göra följande:
 
@@ -14,7 +16,9 @@ I detta exempelprojekt kommer vi att göra följande:
 1. Radera filen från filsystemet med hjälp av `std::delete`
 
 ## std::ifstream
-__Förklaring:__ `std::ifstream` är en förkortning för "input file stream". Detta är klassen som innehåller massvis av hjälpmetoder för att läsa data från en fil. Man kan även använda `<<` och `>>` med `ifstream` liksom man gör i `<iostream>`.
+__Förklaring:__ `std::ifstream` är en förkortning för "input file stream". Detta är klassen som innehåller massvis av hjälpmetoder för att läsa data från en fil.
+
+__Operator `>>`:__ Operatorn `>>` läser karaktärer från en fil in i en buffer fram till ett blanksteg.
 
 __Exempel__: Följande exempel läser data från en fil fram till ett mellanrum och lägger den i variabeln `buffer`
 ```cpp
@@ -25,7 +29,9 @@ in >> buffer;
 in.close();
 ```
 ## std::ofstream
-__Förklaring:__ `std::ofstream` är en förkortning för "output file stream". Detta är klassen som innehåller massvis av hjälpmetoder för att skriva data från en fil. Man kan även använda `<<` och `>>` med `ofstream` liksom man gör i `<iostream>`.
+__Förklaring:__ `std::ofstream` är en förkortning för "output file stream". Detta är klassen som innehåller massvis av hjälpmetoder för att skriva data från en fil.
+
+__Operator__ `<<`: Operatorn `<<` skriver en `std::string` till filen.
 
 __Exempel__ Följande exempel skriver strängen "Hello world!" till en fil.
 ```cpp
@@ -34,7 +40,15 @@ out.open(filename);
 out << "Hello world!";
 out.close();
 ```
-## std::ifstream::good
+## close
+__Förklaring:__ En väldigt viktig notis gällande denna funktion är att det inte bara är memory leaks som detta kan innefatta. Att läsa och skriva till filer kräver sys-calls, locks, och andra funktioner för att se till att filer inte blir korrupta. Därför är det väldigt viktigt att signalera till operativsystemet att du är färdig med filen.
+
+__Exampel:__
+```cpp
+std::ifstream in(filename);
+in.close(); // Signalerar att vi är färdiga med filen
+```
+## good
 __Förklaring:__ Metoden `good` är till för att kolla om några fel-flaggor som är kopplade till läsningen eller skrivande till en fil. Detta är även hur vi kollar om en fil existerar eftersom `std::ifstream` kommer få en fel-flagga om filen vi försöker läsa från inte existerar.
 
 __Exempel:__ Kolla om en fil existerar
