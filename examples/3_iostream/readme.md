@@ -5,8 +5,8 @@ Inkludering:
 #include <iostream>
 ```
 
-## `std::string`:
-reexported from `<string>`
+## reexports:
+`std::string` from `<string>`
 
 ## `std::cout`:
 

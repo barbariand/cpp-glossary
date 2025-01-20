@@ -16,12 +16,7 @@ language("C++")
 cppdialect("C++11")
 
 -- Projects
-project("iostream")
-files({ "examples/iostream/**.cpp" })
-
-project("fstream")
-files({ "examples/fstream/**.cpp" })
-
+require("projects")
 -- End projects
 
 -- Debug configuration
