@@ -18,7 +18,6 @@ Här kan du med operatorn `<<` skriva ut saker.
 
 __Exempel__:
 ```c++
-// language=cpp
 std::cout << "Hello World!";
 ```
 
