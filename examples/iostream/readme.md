@@ -10,26 +10,26 @@ reexported from `<string>`
 
 ## `std::cout`:
 
-Förklaring:
+__Förklaring__:
 `std::cout` är där du skriver text till terminalen.
 
-Operator `<<`:
+__Operator__ `<<`:
 Här kan du med operatorn `<<` skriva ut saker.
 
-Exempel:
+__Exempel__:
 ```cpp
 std::cout << "Hello World!";
 ```
 
 ## `std::cin`:
 
-Förklaring:
+__Förklaring__:
 `std::cin` är där du skriver text till terminalen.
 
-Operator `>>`:
+__Operator__ `>>`:
 Här kan du med operatorn `>>` hämta in variabler från terminalen saker.
 
-Exempel:
+__Exempel__:
 ```cpp
 std::cin >> variabel
 ```
@@ -37,12 +37,12 @@ std::cin >> variabel
 
 ## `std::endl`:
 
-Förklaring:
+__Förklaring__:
 `std::cout` skriver inte direkt till terminalen utan väntar då det är långsamt att skriva till terminalen.
 För att få den att faktiskt skriva ut den direkt så skickar vi `std::endl`.
 Den skriver även en \n
 
-Exempel:
+__Exempel__:
 ```cpp
 std::cout << "Hello World!" << std::endl;
 ```
@@ -50,11 +50,11 @@ std::cout << "Hello World!" << std::endl;
 
 ## `std::getline`:
 
-Förklaring:
+__Förklaring__:
 `std::getline` tar in både en stream och en buffer och tar in all data från streamen och lägger in det i buffern.
-
-Exempel:
+Den ersätter allt som finns i buffern med det som är i streamen.
+__Exempel__:
 ```cpp
 string buffer;
-std::getline(std::cout,buffer);
+std::getline(std::cout, buffer);
 ```
