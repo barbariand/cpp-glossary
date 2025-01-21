@@ -17,7 +17,7 @@ __Operator__ `<<`:
 Här kan du med operatorn `<<` skriva ut saker.
 
 __Exempel__:
-```c++
+```cc
 std::cout << "Hello World!";
 ```
 
@@ -30,7 +30,7 @@ __Operator__ `>>`:
 Här kan du med operatorn `>>` hämta in variabler från terminalen saker.
 
 __Exempel__:
-```c++
+```cc
 std::cin >> variabel
 ```
 
@@ -43,7 +43,7 @@ För att få den att faktiskt skriva ut den direkt så skickar vi `std::endl`.
 Den skriver även en \n
 
 __Exempel__:
-```c++
+```cc
 std::cout << "Hello World!" << std::endl;
 ```
 
@@ -54,7 +54,7 @@ __Förklaring__:
 `std::getline` tar in både en stream och en buffer och tar in all data från streamen och lägger in det i buffern.
 Den ersätter allt som finns i buffern med det som är i streamen.
 __Exempel__:
-```c++
+``cc
 string buffer;
 std::getline(std::cout, buffer);
 ```
