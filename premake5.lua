@@ -7,6 +7,7 @@ workspace("C++ Glossary")
 configurations("Debug", "Release")
 
 -- Outputs
+objdir("obj")
 targetdir("bin/%{cfg.buildcfg}")
 
 -- Build tools
