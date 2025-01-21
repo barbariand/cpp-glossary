@@ -1,5 +1,5 @@
 # fstream
-När vi ska läsa och skriva från och till filer vill vi använda detta bibliotek:
+__Inkludering__:
 ```c++
 #include <fstream>
 ```
