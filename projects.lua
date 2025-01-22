@@ -10,9 +10,9 @@ local function project_def(name, __files)
 end
 
 -- stylua: ignore start
-project_def("primitives",   { "examples/0_primitives/**.cpp" })
-project_def("core",         { "examples/1_core/**.cpp" })
-project_def("string",       { "examples/2_string/**.cpp" })
-project_def("iostream",     { "examples/3_iostream/**.cpp" })
-project_def("fstream",      { "examples/fstream/**.cpp" })
+project_def("primitives",   { "examples/0_primitives/**.cc" })
+project_def("core",         { "examples/1_core/**.cc" })
+project_def("string",       { "examples/2_string/**.cc" })
+project_def("iostream",     { "examples/3_iostream/**.cc" })
+project_def("fstream",      { "examples/fstream/**.cc" })
 -- stylua: ignore end
