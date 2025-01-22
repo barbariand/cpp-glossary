@@ -6,9 +6,9 @@ int håller heltal.
 
 __Operator__ `+`, `-`, `*`, `/`
 du kan addera, subtrahera, multiplicera och dividera.
-OBS: Divition är heltalsdivition så den tar bort decimalerna som kan komma i slutet
+obs: divition är heltalsdivition så den tar bort decimalerna som kan komma i slutet
 
-__Exempel__
+__exempel__
 ```c++
     int one = 1;
     int two = 2;
