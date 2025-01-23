@@ -9,6 +9,29 @@ int main() {
   if (false) {
     // not run beacuse is false
   } else {
-	//This code runs
+    //This code runs
   }
+  int foo = 1;
+  int bar = 2;
+
+  if (foo == bar) {
+    //foo and bar are equal
+  }
+  if (foo != bar) {
+    //foo and bar are not equal
+  }
+  if (foo < bar) {
+    //foo is less than bar
+  }
+  if (foo > bar) {
+    //foo is greater than bar
+  }
+  if (foo <= bar) {
+    //foo is less than or equal to bar
+  }
+  if (foo >= bar) {
+    //foo is greater than or equal to bar
+  }
+
+  return 0;
 }

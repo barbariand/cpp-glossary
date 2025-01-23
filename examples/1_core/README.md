@@ -112,8 +112,25 @@ int main() {
     return 0;
 }
 ```
+
+## Using
+__Förklaring__:
+`using` är det keywordet som du använder när du vill ta in saker från en annan modul så som `std`
+
+```cc
+namespace test {
+    int my_great_function() {
+        // Din kod här
+    }
+}
+using test::my_great_function;
+int main() {
+    my_great_function();
+    return 0;
+}
+```
 __Exempel:__ skapa och referera till ett namespace
-<span style="background-color: red">Warning</span> do not do this
+__Warning__ gör inte detta utan ta in det du exakt behöver med using bara.
 ```cc
 using namespace test;
 
