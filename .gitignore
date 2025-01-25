@@ -5,5 +5,6 @@ bin/
 build/
 Makefile
 *.make
+*.sln
 compile_commands.json
 
