@@ -16,4 +16,5 @@ project_def("string",       { "examples/2_string/**.cc" })
 project_def("iostream",     { "examples/3_iostream/**.cc" })
 project_def("fstream",      { "examples/fstream/**.cc" })
 project_def("classes",      { "examples/classes/**.cc" })
+project_def("inheritance",      { "examples/inheritance/**.cc" })
 -- stylua: ignore end

@@ -1,74 +1,62 @@
 #include <iostream>
 #include <string>
 
-class Animal {
- public:
-  Animal(std::string t_animal);
-  virtual ~Animal() = default;
-  virtual void speak() = 0;
-  void walk();
-
- protected:
-  std::string t_animal;
-};
-
-class Dog : public Animal {
+class Dog {
  public:
   Dog();
-  ~Dog() = default;
+  ~Dog();
   void speak();
+  void toggle_walking();
+  bool is_walking();
+  std::string name = "dog";
+
+ private:
+  bool __is_walking = false;
 };
 
-class Cat : public Animal {
- public:
-  Cat();
-  ~Cat() = default;
-  void speak();
-};
-
-// Error:
-// class Animal : public Cat, public Dog {
-// ...
-// }
-//
-// Man kan inte ha flera constructors pga
-// multiple inheritance. Du vet inte vilken
-// av klassernas funktion som blir overridas.
+void print_state(Dog& dog);
 
 int main() {
   Dog dog = *new Dog();
 
-  dog.walk();
   dog.speak();
 
-  Cat cat = *new Cat();
+  print_state(dog);
 
-  cat.walk();
-  cat.speak();
+  dog.toggle_walking();
+
+  print_state(dog);
+
+  dog.toggle_walking();
+
+  print_state(dog);
 
   return 0;
 }
 
-Animal::Animal(std::string t_animal) {
-  Animal::t_animal = t_animal;
+Dog::Dog() {
+  Dog::name = "Jerry";
+  std::cout << Dog::name << " has been constructed" << std::endl;
 }
 
-void Animal::walk() {
-  std::cout << "The " << t_animal << " is walking" << std::endl;
-}
-
-Dog::Dog() : Animal("dog") {
-  std::cout << t_animal << " has been constructed" << std::endl;
+Dog::~Dog() {
+  std::cout << Dog::name << " has been destructed" << std::endl;
 }
 
 void Dog::speak() {
   std::cout << "Woof" << std::endl;
 }
 
-Cat::Cat() : Animal("cat") {
-  std::cout << t_animal << " has been constructed" << std::endl;
+void Dog::toggle_walking() {
+  Dog::__is_walking = !Dog::__is_walking;
 }
 
-void Cat::speak() {
-  std::cout << "Meow" << std::endl;
+bool Dog::is_walking() {
+  return Dog::__is_walking;
+}
+
+void print_state(Dog& dog) {
+  // Att använda dog.__is_walking liksom vi gör med dog.name skulle ge ett error.
+  std::cout << "The state of walking for " << dog.name << ": "
+            << dog.is_walking() << std::endl;
 }
