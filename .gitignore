@@ -2,7 +2,7 @@
 .direnv/
 obj/
 bin/
-
+build/
 Makefile
 *.make
 compile_commands.json
