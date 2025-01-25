@@ -1,5 +1,8 @@
+# Nixos stuff
 .cache/
 .direnv/
+
+# Build outputs
 obj/
 bin/
 build/
@@ -7,4 +10,7 @@ Makefile
 *.make
 *.sln
 compile_commands.json
+
+# The book
+book/
 

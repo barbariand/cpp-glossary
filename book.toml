@@ -1,0 +1,11 @@
+[book]
+title = "C++ Glossary"
+authors = ["Cindy Nilsson", "Ludvig"]
+description = "The example book covers examples."
+src = "docs"
+
+[build]
+create-missing = false
+
+[output.html.search]
+limit-results = 15
