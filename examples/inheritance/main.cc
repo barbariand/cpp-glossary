@@ -26,14 +26,40 @@ class Cat : public Animal {
   void speak();
 };
 
-// Error:
-// class Animal : public Cat, public Dog {
-// ...
+// WARNING: Klasser har ett problem så kallat "diamond problem"
+// gällande arv. Problemet innefattar att du inte kan inherita
+// från flera andra klasser på en och samma gång. C++ vet inte
+// vilken "parent" som har sin virtuella funktion overridad.
+//
+// ```cc
+// class Animal {
+//   virtual void walk();
 // }
 //
-// Man kan inte ha flera constructors pga
-// multiple inheritance. Du vet inte vilken
-// av klassernas funktion som blir overridas.
+// class Pet {
+//   virtual void walk();
+// }
+//
+// class Dog : public Pet, public Animal {
+//   void walk();
+// }
+// ```
+
+// WARNING: Klasser har ett problem så kallat "circular
+// inheritance" vilket menar på att funktionaliteten av en
+// klass som ärver från en annan som ärver från den första
+// klassen gör så att 'virtuella' funktioner och annat kan vara
+// odefinierat.
+//
+// ```cc
+// class One : public Two {
+//   ...
+// }
+//
+// class Two : public One {
+//   ...
+// }
+// ```
 
 int main() {
   Dog dog = *new Dog();
