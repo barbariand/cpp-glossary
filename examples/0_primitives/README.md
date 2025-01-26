@@ -77,13 +77,82 @@ __Exempel__
     char a = 'a';
 ```
 
-
-## Modifierare `unsigned`
+## `long` och `short`
 __Förklaring__
-unsigned gör så att typen inte kan vara negativ
+`long` och `short` är båda types och modifierare, denna delen beskriver hur de fungerar som typer.
+`long` som en typ expanderar till `long int`.
+`short` som en typ expanderar till `short int`.
 
 __Exempel__
 ```c++
-    bool is_true=true;
-    bool is_false=false;
+    long correct = 1;// same as
+    long int correct = 1;
+    short correct = 1;// same as
+    short int correct = 1;
+```
+## Modifierare:
+### Modifierare `long`
+__Förklaring__
+gör så att typer tar mer minne och kan hålla större mängder
+
+
+__Fungerar på__:
+- int
+- char
+- double
+- long
+
+__Exempel__
+```c++
+    long int correct = 1;
+    long char correct = 'a';
+    long double correct = 1.0;
+    // Long can be used twise on ints to make them even bigger
+    long long int also_correct = 1;
+    long long also_correct = 1;// this expands to the same as above
+```
+
+### Modifierare `short`
+__Förklaring__
+gör så att typer tar mindre minne och kan hålla minder mängder
+
+__Fungerar på__:
+- int
+
+__Exempel__
+```c++
+     short int correct = 1;
+```
+
+### Modifierare `unsigned`
+__Förklaring__
+unsigned gör så att typen inte kan vara negativ och kan då hålla mer positiva värden
+
+__Fungerar på__:
+- int
+- char
+- och alla kominationer med long och short för typerna ovan
+
+__Exempel__
+```c++
+    unsigned int correct = 1;
+    unsigned int also_correct = 0;
+    // This will not give a compiler error
+    // but instead often be 2^32 - 1 wich means it is undefined behaviour
+    unsigned int incorrect=-1;
+```
+### Modifierare `signed`
+__Förklaring__
+signed gör så att typen kan vara negativ explicit
+
+__Fungerar på__:
+- int
+- char
+- och alla kominationer med long och short för typerna ovan
+
+__Exempel__
+```c++
+    signed int correct = 1;
+    signed int also_correct = 0;
+    signed int negative_correct=-1;
 ```

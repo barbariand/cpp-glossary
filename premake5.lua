@@ -19,6 +19,9 @@ cppdialect("C++11")
 -- Projects
 require("projects")
 
+-- Warnings all
+warnings "Extra"
+
 -- Debug configuration
 filter("configurations:Debug")
 defines({ "DEBUG" })
