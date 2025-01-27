@@ -1,0 +1,16 @@
+name: binary integration tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+    steps:
+      - uses: actions/checkout@v2
+      - name: run tests
+      - uses: extractions/setup-just@v2
+      - run: just test
