@@ -11,9 +11,9 @@ jobs:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
       - uses: actions/checkout@v2
-      - name: run tests
-        uses: extractions/setup-just@v2
-        uses: abel0b/setup-premake@v2.4
+      - uses: extractions/setup-just@v2
+      - uses: abel0b/setup-premake@v2.4
         with:
-        version: "5.0.0-beta2"
-      - run: just test
+          version: "5.0.0-beta2"
+      - name: run tests
+        run: just test
