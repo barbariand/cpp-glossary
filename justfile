@@ -21,7 +21,3 @@ run_all config="Debug":
   premake5 --dc=ldc gmake
   make config=$(echo {{config}} | tr '[:upper:]' '[:lower:]')
   bash ./scripts/run_all.sh
-
-# Build a visual studio solution file with a specific version (year)
-visual_studio version:
-  premake5 --dc=ldc vs{{version}}
