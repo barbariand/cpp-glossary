@@ -12,5 +12,5 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: run tests
-      - uses: extractions/setup-just@v2
+        uses: extractions/setup-just@v2
       - run: just test
