@@ -8,18 +8,16 @@ ecc:
 
 # Build all binaries using 'make' as per the project spec
 gmake $CONFIG="Debug":
-  bash ./scripts/gmake.sh
+  premake5 --dc=ldc --cc=clang gmake
+  make config=${CONFIG,,} $@
 
 # Build and run a specific project using 'make'
-run project $CONFIG="Debug":
-  bash ./scripts/gmake.sh {{project}}
+run project $CONFIG="Debug": (gmake CONFIG)
   ./bin/${CONFIG^}/{{project}}
 
 # Run all projects after building them
-run_all $CONFIG="Debug":
-  bash ./scripts/gmake.sh
-  bash ./scripts/run_all.sh
+run_all $CONFIG="Debug": (gmake CONFIG)
+  source ./scripts/run_all.sh
 
-test $CONFIG="Debug":
-  source ./scripts/gmake.sh
+test $CONFIG="Debug": (gmake CONFIG)
   source ./scripts/test.sh
