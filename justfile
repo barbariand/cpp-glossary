@@ -7,17 +7,15 @@ ecc:
   watchexec -e cc,h -- premake5 ecc
 
 # Build all binaries using 'make' as per the project spec
-gmake config="Debug":
-  premake5 --dc=ldc gmake
-  make config=$(echo {{config}} | tr '[:upper:]' '[:lower:]')
+gmake $CONFIG="Debug":
+  bash ./scripts/gmake.sh
 
 # Build and run a specific project using 'make'
-run project config="Debug":
-  premake5 --dc=ldc gmake
-  make config=$(echo {{config}} | tr '[:upper:]' '[:lower:]') {{project}}
-  ./bin/{{config}}/{{project}}
+run project $CONFIG="Debug":
+  bash ./scripts/gmake.sh {{project}}
+  ./bin/${CONFIG^}/{{project}}
 
-run_all config="Debug":
-  premake5 --dc=ldc gmake
-  make config=$(echo {{config}} | tr '[:upper:]' '[:lower:]')
+# Run all projects after building them
+run_all $CONFIG="Debug":
+  bash ./scripts/gmake.sh
   bash ./scripts/run_all.sh
