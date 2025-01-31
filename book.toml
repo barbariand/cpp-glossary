@@ -7,5 +7,10 @@ src = "docs"
 [build]
 create-missing = false
 
+[output.html]
+git-repository-url = "https://github.com/barbariand/cpp-glossary"
+git-repository-icon = "fa-github"
+site-url = "/cpp-glossary/"
+
 [output.html.search]
 limit-results = 15
