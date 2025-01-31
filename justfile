@@ -1,3 +1,5 @@
+set shell := ["bash", "-c"]
+
 # List out the recipies
 default:
   just --list
