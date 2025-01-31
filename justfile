@@ -19,3 +19,7 @@ run project $CONFIG="Debug":
 run_all $CONFIG="Debug":
   bash ./scripts/gmake.sh
   bash ./scripts/run_all.sh
+
+test $CONFIG="Debug":
+  source ./scripts/gmake.sh
+  source ./scripts/test.sh
