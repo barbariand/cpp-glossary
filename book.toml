@@ -4,7 +4,6 @@ authors = ["Cindy Nilsson", "Ludvig"]
 description = "The example book covers examples."
 src = "docs"
 
-
 [build]
 create-missing = false
 
