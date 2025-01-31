@@ -5,5 +5,7 @@ if [ -z "$CONFIG" ]; then
 fi
 
 for file in ./bin/$CONFIG/*; do
- $file
+  name=$(basename $file)
+  echo ">>>> running $name >>>>"
+ $file && echo "<<<< $name done <<<<"
 done
