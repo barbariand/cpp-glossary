@@ -19,5 +19,6 @@ run project $CONFIG="Debug": (gmake CONFIG)
 run_all $CONFIG="Debug": (gmake CONFIG)
   source ./scripts/run_all.sh
 
+# Test all projects in the repository
 test $CONFIG="Debug": (gmake CONFIG)
   source ./scripts/test.sh
