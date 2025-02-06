@@ -1,11 +1,11 @@
 [book]
-title = "C++ Glossary"
+title = "C++ Wiki"
 authors = ["Cindy Nilsson", "Ludvig"]
-description = "The example book covers examples."
-src = "docs"
+description = "C++ Wikin förklarar konsept och exempel."
+src = "wiki"
 
 [build]
-create-missing = false
+create-missing = true
 
 [output.html]
 git-repository-url = "https://github.com/barbariand/cpp-glossary"
