@@ -1,3 +1,4 @@
+---
 name: "Code Feature Request"
 description: "Propose a new feature or improvement in the code."
 title: "[Feature]: "
@@ -50,3 +51,4 @@ body:
     description: Lägg till annan information som kan vara användbar.
     rows: 5
 assignees: ''
+---

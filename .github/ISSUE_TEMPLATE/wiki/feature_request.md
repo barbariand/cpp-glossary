@@ -1,3 +1,4 @@
+---
 name: "Wiki Feature Request"
 description: "Suggest updates or additions to the Wiki."
 title: "[Docs]: "
@@ -41,3 +42,4 @@ body:
     label: Ytterligare sammanhang (Valfritt)
     description: Lägg till annan information som kan vara användbar.
     rows:
+---

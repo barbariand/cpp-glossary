@@ -1,3 +1,4 @@
+---
 name: "Execution Failure"
 description: "Report an example not running as expected"
 title: "[Execution]: "
@@ -70,3 +71,4 @@ body:
     description: Lägg till annan information som kan vara användbar.
     rows: 5
 assignees: ''
+---
