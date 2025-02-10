@@ -1,7 +1,7 @@
 <!-- This is where we write all required links so that the prosessor knows what to do-->
 # C++
-[Wikin](./begininng/wiki.md)
-[Motivation](./begininng/motivation.md)
+[Wikin](./beginning/wiki.md)
+[Motivation](./beginning/motivation.md)
 # C++ Language
 ## Memory and primitives
 - [Memory](./memory/memory.md)
