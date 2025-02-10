@@ -35,7 +35,7 @@ body:
     id: relevant-page
     label: Relevant sida (om tillämpligt)
     description: Om ditt förslag relaterar till en specifik sida i wikin, ange sidans namn eller URL.
-    placeholder: t.ex. https://github.com/barbariand/cpp-glossary/wiki/Någon-Sida
+    placeholder: t.ex. https://github.com/barbariand/cpp-glossary/blob/master/docs/SUMMARY.md
 
   - type: textarea
     id: additional-context

@@ -27,7 +27,7 @@ body:
     id: code-file
     label: Länk till kodfil
     description: Vänligen tillhandahåll en länk till en fil som innehåller ett minimalt, självständigt exempel som visar byggfelet. Ju mindre exemplet är, desto bättre.
-    placeholder: t.ex. https://github.com/ditt_repo/exempel.cpp
+    placeholder: t.ex. https://gist.github.com/<username>/<hash>
     required: true
 
   - type: textarea
