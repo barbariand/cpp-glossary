@@ -4,17 +4,20 @@ issue_templates:
     description: "Report an example failing to compile"
     title: "[Build]: "
     labels: ["building", "bug"]
+
     body: "./ISSUE_TEMPLATE/code/compilation_failure.md"
   - name: "Execution Failure"
     description: "Report an example not running as expected"
     title: "[Execution]: "
     labels: ["execution", "bug"]
     body: "./ISSUE_TEMPLATE/code/execution_failure.md"
+
   - name: "Code Feature Request"
     description: "Propose a new feature or improvement in the code."
     title: "[Feature]: "
     labels: ["enhancement", "code"]
     body: "./ISSUE_TEMPLATE/code/feature_request.md"
+
   - name: "Wiki Feature Request"
     description: "Suggest updates or additions to the Wiki."
     title: "[Docs]: "
@@ -25,6 +28,7 @@ issue_templates:
     title: "[Incosistency]: "
     labels: ["incosistency", "wiki", "bug"]
     body: "./ISSUE_TEMPLATE/wiki/inconsistency.md"
+
   - name: "General Report"
     description: "Provide general feedback or inquiries."
     title: "[General]: "
