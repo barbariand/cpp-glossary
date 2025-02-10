@@ -31,9 +31,8 @@ body:
   - type: input
     id: code-file
     label: Länk till kodfil (om relevant)
-    description: Vänligen tillhandahåll en länk till en fil som innehåller ett minimalt, självständigt exempel som visar exekveringsfelet. Ju mindre exemplet är, desto bättre.
-    placeholder: t.ex. https://github.com/barbariand/cpp-glossary/exempel.cpp (Lämna tomt om inte tillämpligt)
-
+    description: En självständig bit kod som ger motsvarande exekveringsfel (Om applicerbart till problemet).
+    placeholder: t.ex. https://gist.github.com/<username>/<hash>
 
   - type: textarea
     id: input
