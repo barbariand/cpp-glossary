@@ -1,4 +1,3 @@
----
 name: "Inconsistency in Wiki"
 description: "Inconsistency with the C++ programming language."
 title: "[Inconsistency]: "
@@ -43,4 +42,3 @@ body:
     label: Ytterligare sammanhang (Valfritt)
     description: Lägg till annan information som kan vara användbar.
     rows: 5
----
