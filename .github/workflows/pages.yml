@@ -12,13 +12,25 @@ jobs:
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-      - uses: actions/checkout@v2
-      - name: Setup mdBook
-        uses: peaceiris/actions-mdbook@v2
+      - uses: actions/checkout@v4
+      - uses: actions/cache@v4
         with:
-          mdbook-version: '0.4.10'
-          # mdbook-version: 'latest'
-      - run: mdbook build
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            target
+            ~/.cargo/bin
+            /tmp/cargo-install-target-dir
+          # We reuse the cache from our detailed test environment, if available
+          key: detailed-test-${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.toml') }}
+      - name: Install toolchain
+        uses: dtolnay/rust-toolchain@master
+        with:
+          toolchain: stable
+      - name: Install mdbook
+        env:
+          CARGO_TARGET_DIR: "/tmp/cargo-install-target-dir"
+        run: ./scripts/install-mdbook.sh
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/master' }}
