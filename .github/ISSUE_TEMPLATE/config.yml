@@ -24,11 +24,7 @@ issue_templates:
     description: "Incosistency with the C++ programing language."
     title: "[Incosistency]: "
     labels: ["incosistency", "wiki", "bug"]
-<<<<<<< HEAD
-    body: "./ISSUE_TEMPLATE/wiki/inconsistency.md"
-=======
     body: "./ISSUE_TEMPLATE/wiki/inconsistency.yml"
->>>>>>> a42bc23 (fix: spelling, structuring and file extension)
   - name: "General Report"
     description: "Provide general feedback or inquiries."
     title: "[General]: "

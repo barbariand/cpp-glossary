@@ -1,4 +1,3 @@
----
 name: General Report
 about: Provide general feedback or inquiries
 title: "[General]: "
@@ -21,4 +20,3 @@ body:
     label: Ytterligare sammanhang (Valfritt)
     description: Lägg till annan information som kan vara relevant.
     rows: 5
----
