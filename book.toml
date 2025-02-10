@@ -5,7 +5,7 @@ description = "C++ Wikin förklarar konsept och exempel."
 src = "wiki"
 
 [build]
-create-missing = true
+create-missing = false
 
 [output.html]
 git-repository-url = "https://github.com/barbariand/cpp-glossary"
