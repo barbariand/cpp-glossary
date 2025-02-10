@@ -4,8 +4,8 @@ title: "[Inconsistency]: "
 labels: ["inconsistency", "wiki", "bug"]
 body:
   - type: markdown
-    value: |
-      Tack för att du rapporterar en inkonsekvens i wikin! Fyll i informationen nedan så att vi kan undersöka.
+    attributes:
+      value: "Tack för att du rapporterar en inkonsekvens i wikin! Fyll i informationen nedan så att vi kan undersöka."
 
   - type: input
     id: wiki-page

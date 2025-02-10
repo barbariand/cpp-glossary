@@ -1,13 +1,11 @@
----
 name: "Build Failure"
 description: "Report an example failing to compile"
 title: "[Build]: "
 labels: ["building", "bug"]
-assignees: ''
 body:
   - type: markdown
-    value: |
-      Tack för att du rapporterar ett byggfel! Fyll i informationen nedan så att vi kan undersöka.  Se vår [C++-wiki]() för mer information.
+    attributes:
+      value: "Tack för att du rapporterar ett byggfel! Fyll i informationen nedan så att vi kan undersöka.  Se vår [C++-wiki](https://barbariand.github.io/cpp-glossary/) för mer information."
 
   - type: input
     id: compiler

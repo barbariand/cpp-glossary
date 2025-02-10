@@ -1,4 +1,5 @@
 name: General Report
+description: General bug och eller annat fel
 title: "[General]: "
 labels: general
 body:

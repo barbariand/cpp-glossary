@@ -5,8 +5,7 @@ labels: ["enhancement", "code"]
 body:
   - type: markdown
     attributes:
-      value: |
-      Tack för att du föreslår en ny funktion eller förbättring i koden! Fyll i informationen nedan så att vi kan utvärdera ditt förslag.
+      value: "Tack för att du föreslår en ny funktion eller förbättring i koden! Fyll i informationen nedan så att vi kan utvärdera ditt förslag."
 
   - type: textarea
     id: description

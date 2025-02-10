@@ -5,8 +5,7 @@ labels: ["execution", "bug"]
 body:
   - type: markdown
     attributes:
-      value: |
-      Tack för att du rapporterar ett exekveringsfel! Fyll i informationen nedan så att vi kan undersöka.
+      value: "Tack för att du rapporterar ett exekveringsfel! Fyll i informationen nedan så att vi kan undersöka."
 
   - type: input
     id: program
