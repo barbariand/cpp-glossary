@@ -1,5 +1,7 @@
 # C++ Glossary
 
+[Wikin](https://barbariand.github.io/cpp-glossary)
+
 ## Motivation:
 C++ dokumentationen är oftastväldigt complex och kan vara väldigt lång.
 Meningen med glossaryn är för att enklare kuna använda C++en som finns utan att fastna med dokumentation eller behöva söka för att hitta det som behövs.
