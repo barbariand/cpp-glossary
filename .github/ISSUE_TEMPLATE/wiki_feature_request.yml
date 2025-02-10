@@ -26,7 +26,7 @@ body:
       required: true
 
   - type: textarea
-    id: proposed-content (Optional)
+    id: proposed-content
     attributes:
       label: Föreslaget innehåll
       description: Om du har ett utkast till det nya innehållet, klistra in det här. Detta är valfritt, men hjälper oss att förstå ditt förslag bättre.
