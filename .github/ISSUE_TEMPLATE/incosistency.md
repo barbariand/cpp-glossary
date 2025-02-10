@@ -12,7 +12,7 @@ body:
     id: wiki-page
     label: Wiki-sida
     description: Vilken sida i wikin är inkonsekvent?
-    placeholder: t.ex. https://github.com/barbariand/cpp-glossary/wiki/sidan/som/har/inkonsistent
+    placeholder: t.ex. https://github.com/barbariand/cpp-glossary/blob/master/docs/SUMMARY.md
     required: true
 
   - type: textarea
