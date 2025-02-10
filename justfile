@@ -22,3 +22,11 @@ run_all $CONFIG="Debug": (gmake CONFIG)
 # Test all projects in the repository
 test $CONFIG="Debug": (gmake CONFIG)
   source ./scripts/test.sh
+
+book:
+  ./scripts/install-mdbook.sh
+  mdbook build --open
+
+book-watch:
+  ./scripts/install-mdbook.sh
+  mdbook serve --open
