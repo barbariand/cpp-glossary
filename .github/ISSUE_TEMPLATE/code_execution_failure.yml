@@ -37,7 +37,7 @@ body:
     attributes:
       label: Länk till kodfil (om relevant)
       description: En självständig bit kod som ger motsvarande exekveringsfel (Om applicerbart till problemet).
-    placeholder: t.ex. https://gist.github.com/<username>/<hash>
+      placeholder: t.ex. https://gist.github.com/<username>/<hash>
 
   - type: textarea
     id: input
