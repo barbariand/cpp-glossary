@@ -4,27 +4,27 @@ issue_templates:
     description: "Report an example failing to compile"
     title: "[Build]: "
     labels: ["building", "bug"]
-    body: "./ISSUE_TEMPLATE/code/compilation_failure.yml"
+    body: "./ISSUE_TEMPLATE/code_compilation_failure.yml"
   - name: "Execution Failure"
     description: "Report an example not running as expected"
     title: "[Execution]: "
     labels: ["execution", "bug"]
-    body: "./ISSUE_TEMPLATE/code/execution_failure.yml"
+    body: "./ISSUE_TEMPLATE/code_execution_failure.yml"
   - name: "Code Feature Request"
     description: "Propose a new feature or improvement in the code."
     title: "[Feature]: "
     labels: ["enhancement", "code"]
-    body: "./ISSUE_TEMPLATE/code/feature_request.yml"
+    body: "./ISSUE_TEMPLATE/code_feature_request.yml"
   - name: "Wiki Feature Request"
     description: "Suggest updates or additions to the Wiki."
     title: "[Docs]: "
     labels: ["enhancement", "wiki"]
-    body: "./ISSUE_TEMPLATE/wiki/feature_request.yml"
+    body: "./ISSUE_TEMPLATE/wiki_feature_request.yml"
   - name: "Incosistency in Wiki"
     description: "Incosistency with the C++ programing language."
     title: "[Incosistency]: "
     labels: ["incosistency", "wiki", "bug"]
-    body: "./ISSUE_TEMPLATE/wiki/inconsistency.yml"
+    body: "./ISSUE_TEMPLATE/wiki_inconsistency.yml"
   - name: "General Report"
     description: "Provide general feedback or inquiries."
     title: "[General]: "
