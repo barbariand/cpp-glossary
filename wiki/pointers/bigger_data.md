@@ -1,0 +1,3 @@
+# Större data och pointers
+
+Vi utgår ifrån ett program som läser in en stor fil. Om vi går in i ett nytt scope eller område av koden så skapas nya variabler för att representera datan som scopet har åtkomst till. Vi vet att filen är stor, så vi vill undvika att kopiera den till en ny variabel. Ett nummer är mycket mindre än att kopiera en hel fil, av den anledningen är __pointern__ mycket bättre. __Pointern__, som då blir kopierad, pekar mot fildatan. Det ger oss möjlighet att läsa utan att kopiera. En annan positiv effekt är _mutability_. När vi ändrar kopierad data kommer det inte att representeras i det yttre scopet. Genom pointer har vi tillgång till samma data/plats som det yttre scopet; även tillgång att ändra på datan för det yttre scopet.

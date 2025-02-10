@@ -1,29 +1,29 @@
 <!-- This is where we write all required links so that the prosessor knows what to do-->
 # C++
-[Wikin](./begining/wiki.md)
-[Motivation](./begining/motivation.md)
+[Wikin](./begininng/wiki.md)
+[Motivation](./begininng/motivation.md)
 # C++ Language
 ## Memory and primitives
-- [Memory](./memory.md)
-    - [Static types]()
+- [Memory](./memory/memory.md)
+    - [Static types](./memory/memory.md)
 ## Branching
-- [Branching]()
-    - [Condition]()
-    - [If]()
-    - [Switch]()
+- [Branching](./branching/branching.md)
+    - [Condition](./branching/condition.md)
+    - [If](./branching/if.md)
+    - [Switch](./branching/switch.md)
 ## Scope
-- [Scope]()
-    - [Lifetimes]()
-    - [Global Scope]()
-    - [Namespaces]()
+- [Scope](./scope/scope.md)
+    - [Lifetimes](./scope/lifetimes.md)
+    - [Global Scope](./scope/global_scope.md)
+    - [Namespaces](./scope/namespace.md)
 ## Pointers
-- [Pointers]()
-    - [Referances och derefeances]()
-    - [Större data och pointers]()
-    - [Pointers och scope]()
-    - [Smart pointers]()
+- [Pointers](./pointers/pointers.md)
+    - [Referances och derefeances](./pointers/referance_and_dereferance.md)
+    - [Större data och pointers](./pointers/bigger_data.md)
+    - [Pointers och scope](./pointers/pointers_and_scope.md)
+    - [Smart pointers](./pointers/smart_pointers.md)
 - [Destructing]()
-- [Arrays]()
+- [Arrays](./array.md)
 - [Functions]()
 - [Declaration vs definition]()
 ## OOP
