@@ -5,7 +5,7 @@
 # C++ Language
 ## Memory and primitives
 - [Memory](./memory/memory.md)
-    - [Static types](./memory/memory.md)
+    - [Static types](./memory/static_types.md)
 ## Branching
 - [Branching](./branching/branching.md)
     - [Condition](./branching/condition.md)
@@ -22,6 +22,7 @@
     - [Större data och pointers](./pointers/bigger_data.md)
     - [Pointers och scope](./pointers/pointers_and_scope.md)
     - [Smart pointers](./pointers/smart_pointers.md)
+## TBD
 - [Destructing]()
 - [Arrays](./array.md)
 - [Functions]()
