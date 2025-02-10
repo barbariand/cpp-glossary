@@ -35,7 +35,7 @@ fi
 
 eprintln "mdbook $KATEX_VERSION is installed"
 eprintln "Installing mdbook-admonish (to book)"
-mdbook-admonish install .
+mdbook-admonish install . --css-dir ./wiki/custom_css/
 
 eprintln "Building book"
 mdbook build
