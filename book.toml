@@ -11,7 +11,7 @@ create-missing = false
 git-repository-url = "https://github.com/barbariand/cpp-glossary"
 git-repository-icon = "fa-github"
 site-url = "/cpp-glossary/"
-additional-css = ["./wiki/custom_css/mdbook-admonish.css"]
+additional-css = ["./wiki/custom_css/mdbook-admonish.css","./wiki/custom_css/images.css"]
 
 [output.html.search]
 limit-results = 15

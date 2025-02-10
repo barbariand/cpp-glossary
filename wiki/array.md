@@ -15,17 +15,13 @@ För att få tag i ett element “indexerar” vi in i vår __array__. Vi läser
 Vi börjar på platsen för första elementet och sedan adderar antalet element multiplicerat med storleken på våra element. Om vi skulle räkna ut vilken pointer vi behöver ha för att nå element 2, $y$, av en `int my_array[3]` där $x$ är vår pointer:
 
 $$
-
-s = \text{storleken på en int}
-
+s = \text{storleken på en int}\\
 y = x + 2 \cdot s
-
 $$
 
 __Note__: Det är av den anledningen som första elementet har index 0.
 
 C++ har en syntax för att göra detta automatiskt, så man behöver inte tänka i dessa banor medan man programmerar. Det är bara bra att veta vad som faktiskt händer. Syntaxen som vi har är `[x]` där `x` är vår index.
-
 
 ![image showing array math](./images/array_math.png)
 
