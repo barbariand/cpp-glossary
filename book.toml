@@ -4,6 +4,7 @@ authors = ["Cindy Nilsson", "Ludvig"]
 description = "C++ Wikin förklarar konsept och exempel."
 src = "wiki"
 
+
 [build]
 create-missing = false
 
@@ -11,7 +12,7 @@ create-missing = false
 git-repository-url = "https://github.com/barbariand/cpp-glossary"
 git-repository-icon = "fa-github"
 site-url = "/cpp-glossary/"
-additional-css = ["./wiki/custom_css/mdbook-admonish.css", "./mdbook-admonish.css"]
+additional-css = ["./wiki/custom_css/mdbook-admonish.css"]
 
 [output.html.search]
 limit-results = 15
