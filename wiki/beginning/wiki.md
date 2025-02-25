@@ -2,10 +2,6 @@
 
 Välkommen till våran C++ Wiki!
 
-## **Varför har vi skrivit Wikin**
-
-Wikin är skriven som en guide till allt i C++. Vi som skrivit den har gjort det för att dokumentera de relevanta delarna av språkets och kursens innehåll. Det ger oss möjlighet att gå tillbaka och repetera innehållet men även för andra att kunna ta del av och lära sig.
-
 ## **Instruktion på hur man använder Wikin**
 
 Wikin är strukturerad som en bok och kapitel kommer så gott som möjligt att endast bygga på tidigare kapitel. Målet är att ha en bok som går att följa för att lära sig C++ utan att missa vitala delar och fallgropar.

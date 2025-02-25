@@ -1,6 +1,6 @@
 # Lifetimes
 
-Vi kallar tiden variablen lever för en __lifetime__. Att leva och vara i scope är inte samma sak då lifetimen av en variable tar slut när den frigörs(free) när den förstörs/[[destrueras|Destructors]].
+Vi kallar tiden variablen lever för en __lifetime__. Att leva och vara i scope är inte samma sak då lifetimen av en variable tar slut när den frigörs(free) eller när den förstörs( [[destrueras|Destructors]] ).
 
 ```cc
 

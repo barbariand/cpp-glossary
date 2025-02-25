@@ -16,6 +16,7 @@
     - [Lifetimes](./scope/lifetimes.md)
     - [Global Scope](./scope/global_scope.md)
     - [Namespaces](./scope/namespace.md)
+    - [(Optional): Destructing](./scope/destructing.md)
 ## Pointers
 - [Pointers](./pointers/pointers.md)
     - [Referances och derefeances](./pointers/referance_and_dereferance.md)
@@ -23,7 +24,6 @@
     - [Pointers och scope](./pointers/pointers_and_scope.md)
     - [Smart pointers](./pointers/smart_pointers.md)
 ## TBD
-- [Destructing]()
 - [Arrays](./array.md)
 - [Functions]()
 - [Declaration vs definition]()

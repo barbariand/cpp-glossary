@@ -1,0 +1,2 @@
+# Destructing
+{{#include ../advanced.md}}

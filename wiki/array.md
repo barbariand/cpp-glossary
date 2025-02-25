@@ -1,6 +1,6 @@
 # Array
 
-En __array__ är, liksom variabler, ett sätt att hålla information, _mutera_(ändra) information och hämta information. Skillnaden mellan __arrays__ och variabler är att __arrays__ håller flera element (tänk dig variabler) som ligger efter varandra i minnet.
+En __array__ är, liksom variabler, ett sätt att hålla information, _mutera_ (ändra) information och hämta information. Skillnaden mellan __arrays__ och variabler är att __arrays__ håller flera element (tänk dig variabler) som ligger efter varandra i minnet.
 
 En __array__ är egentligen en pointer till första elementet samt antalet element. Dessutom behöver vi en typ av element för att få reda på storleken för varje element.
 

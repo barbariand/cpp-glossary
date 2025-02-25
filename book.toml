@@ -12,15 +12,15 @@ git-repository-url = "https://github.com/barbariand/cpp-glossary"
 git-repository-icon = "fa-github"
 site-url = "/cpp-glossary/"
 additional-css = ["./wiki/custom_css/mdbook-admonish.css","./wiki/custom_css/images.css"]
+edit-url-template = "https://github.com/barbariand/cpp-glossary/edit/master/wiki/{path}"
 
 [output.html.search]
 limit-results = 15
-
-[preprocessor]
 
 [preprocessor.katex]
 after = ["links"]
 
 [preprocessor.admonish]
+after = ["links"]
 command = "mdbook-admonish"
 assets_version = "3.0.2" # do not edit: managed by `mdbook-admonish install`
