@@ -1,11 +1,26 @@
 [book]
-title = "C++ Glossary"
+title = "C++ Wiki"
 authors = ["Cindy Nilsson", "Ludvig"]
-description = "The example book covers examples."
-src = "docs"
+description = "C++ Wikin förklarar konsept och exempel."
+src = "wiki"
 
 [build]
 create-missing = false
 
+[output.html]
+git-repository-url = "https://github.com/barbariand/cpp-glossary"
+git-repository-icon = "fa-github"
+site-url = "/cpp-glossary/"
+additional-css = ["./wiki/custom_css/mdbook-admonish.css"]
+
 [output.html.search]
 limit-results = 15
+
+[preprocessor]
+
+[preprocessor.katex]
+after = ["links"]
+
+[preprocessor.admonish]
+command = "mdbook-admonish"
+assets_version = "3.0.2" # do not edit: managed by `mdbook-admonish install`
